@@ -15,7 +15,7 @@ Team members: Rafael Heryapriadi, Sidney Lok, Steven Neumaier
 [Given that membranes have a unit cost that doesn't change with number of units it would seem that making a cost comparison with units of USD/(L/s) of capacity would be obvious. Why do you want to limit your analysis to a single flow rate of 16 L/s? Put yourselves in the position of an engineer who is reading your analysis and consider the likelihood that they want to build a 16 L/s plant. Similarly, the operating cost data should have units of USD/million liters produced. The yield for each process should be the percent of settled water that can be delivered as filtered water.]:#
 
 ## Introduction
-Membrane filtration is an up-and-coming type of filtration option [Perhaps give a little history here including how many decades membranes have been used] for water treatment plants. The first water treatment plant to use membrane filtration was a plant in Colorado that opened in 1987 (Technology trends in membrane filtration use). Beginning around 2001, there has been significant investment in research and development of membrane filters. Membrane filtration is attractive because the pores are small enough to capture particles like Cryptosporidium oocysts. Membrane filtration requires a large membrane surface area to treat water at the rate it is needed in many communities. Therefore, to minimize space used by a membrane filter, it is arranged into a tight configuration in columns called modules, which are then arranged into arrays called skids. Water passes through the membranes pores which physically remove particles and pathogens.
+Membrane filtration is an up-and-coming type of filtration option [Perhaps give a little history here including how many decades membranes have been used] [Addressed by Steve] for water treatment plants. The first water treatment plant to use membrane filtration was a plant in Colorado that opened in 1987 (Technology trends in membrane filtration use). Beginning around 2001, there has been significant investment in research and development of membrane filters. Membrane filtration is attractive because the pores are small enough to capture particles like Cryptosporidium oocysts. Membrane filtration requires a large membrane surface area to treat water at the rate it is needed in many communities. Therefore, to minimize space used by a membrane filter, it is arranged into a tight configuration in columns called modules, which are then arranged into arrays called skids. Water passes through the membranes pores which physically remove particles and pathogens.
 
 Membrane filtration typically requires a pump to create a pressure differential across the membrane. This means membrane filtration will require electricity to run.
 
@@ -109,7 +109,7 @@ Minty, an AguaClara engineer based in Honduras, provided us with the cost of a A
 The Pall Aria module data sheet mentions that the maximum temperature that the module could operate in is 40 degrees Celsius. However, according to Farahbakhsh and Smith (2006), interactions between the temperature and the polymeric membrane may result in lower porosity and increased tortuosity at lower water temperatures. As AguaClara plants are able to operate without much dependence on water temperature, this should not be a problem.
 [What does "membrane filters are known to not do so well with colder water temperatures" mean? This is a broad generality that tells me nothing. Do the filters break? Do they leak? Does the filtration velocity decrease? What happens and at what temperature does this occur? Is there a minimum recommended temperature?]:#
 
-[Sidney: We addressed this before already. See the cited paper. I'm not sure where the confusion is here.]:#
+[Sidney: See the cited paper. Lower porosity and increased tortuosity at lower water temperatures. There isn't a specific tolerance given in the datasheet from Pall.]:#
 Therefore, in comparing AguaClara plants with membrane filters for decision-making on which technology to use, AguaClara plants may be the better bet in regions that experience colder temperatures while both AguaClara plants and membrane filters are feasible in hotter regions.
 
 [How do you reconcile this with the fact that Ithaca water treatment plant uses membranes? Explain why temperature has an adverse affect on StaRS filters based on what you learned in CEE 4520 about the depth filtration particle removal mechanism]:#
@@ -119,7 +119,7 @@ Therefore, in comparing AguaClara plants with membrane filters for decision-maki
 [Where did you find this information about treated water turbidity for AguaClara? It is wrong!] [Addressed -SL]
 AguaClara plants typically have an output turbidity of less than 0.3 NTU, meeting Honduran standards but not US EPA standards. According to Brooks et. al., AguaClara plants are able to robustly remove E. coli from water being treated.
 
-The Pall Aria module data sheet notes that the output turbidity of their filters should be less than 0.1 NTU, which is under US EPA standards. The Pall Aria module is also capable of removing Cryptosporidium, Giardia, and MS2 coliphage or bacteriophage. [Do StaRS filters remove pathogens? See http://www.ajtmh.org/content/journals/10.4269/ajtmh.17-0577]
+The Pall Aria module data sheet notes that the output turbidity of their filters should be less than 0.1 NTU, which is under US EPA standards. The Pall Aria module is also capable of removing Cryptosporidium, Giardia, and MS2 coliphage or bacteriophage. [Do StaRS filters remove pathogens? See http://www.ajtmh.org/content/journals/10.4269/ajtmh.17-0577] [Addressed -SL]
 
 [what is the flow rate of the module? Go metric! The data you present is useless without providing flow rates.] [Sidney: Unable to retrieve information.]
 ### Plan-view Area
@@ -130,7 +130,7 @@ The AguaClara StaRS filter is much smaller than the necessary membrane filter eq
 [I thought I gave you the information on footprint of the filters. See http://designserver.cee.cornell.edu/Designs/EtFlocSedFi/]
 
 The footprint of an AguaClara StaRS filter is $4 m^{2}$ and the footprint of the Aria system is $42.64 m^{2}$.
-[Interesting. But is this for the same flow rate? Can you do a comparison that includes the equipment needed by both filtration systems so you have a total space required comparison?]
+[Interesting. But is this for the same flow rate? Can you do a comparison that includes the equipment needed by both filtration systems so you have a total space required comparison?] [Addressed in Future Work -SL]
 
 # Conclusions
 With the information we gathered from comparison of AguaClara technology versus Membrane technology, we created a decision tree (Fig. 2) to help users decide on the correct technology to use.
@@ -155,6 +155,8 @@ We recognize that this may not be the most realistic or wholistic look at the co
 Brooks, Y. M., Tenorio-Moncada, E. A., Gohil, N., Yu, Y., Estrada-Mendez, M. R., Bardales, G., & Richardson, R. E. (2018). Performance Evaluation of Gravity-Fed Water Treatment Systems in Rural Honduras: Verifying Robust Reduction of Turbidity and Escherichia coli during Wet and Dry Weather. The American Journal of Tropical Medicine and Hygiene, 99(4), 881-888. doi:10.4269/ajtmh.17-0577
 
 Farahbakhsh, K., & Smith, D. W. (2006). Membrane filtration for cold regions – impact of cold water on membrane integrity monitoring tests. Journal of Environmental Engineering and Science, 5(Supplement 1). doi:10.1139/s06-037
+
+Pall Aria™ AP-Series Water Treatment Systems. (n.d.). Retrieved from https://shop.pall.com/us/en/power-utilities/steam-plants/water-supply/pall-aria-ap-series-water-treatment-systems-zidgri78l70?tracking=searchterm:aria
 
 Technology trends in membrane filtration use. (2018). Filtration Separation, 55(1), 30-33. doi:10.1016/s0015-1882(18)30174-5
 
